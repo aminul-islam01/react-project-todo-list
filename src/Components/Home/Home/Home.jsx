@@ -1,9 +1,10 @@
-
+import './Home.css'
+import image from '/banner.jpg'
 
 const Home = () => {
     return (
-        <div>
-            <h2>Home</h2>
+        <div className='banner'>
+            
         </div>
     );
 };
