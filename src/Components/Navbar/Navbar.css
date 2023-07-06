@@ -1,0 +1,29 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+    background-color: #1C2B35;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+nav.navbar a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 32px;
+}
+nav.navbar a:hover {
+    color: crimson;
+}
+
+.user {
+    color: #fff;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 576px) {
+    .header {
+        flex-direction: column;
+    }
+}
