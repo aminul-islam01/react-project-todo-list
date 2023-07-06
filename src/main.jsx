@@ -12,6 +12,10 @@ import Contact from './Components/Contact/Contact.jsx';
 import AddTask from './Components/AddTask/AddTask.jsx';
 import Orders from './Components/Orders/Orders.jsx';
 import cartProductsLoader from './CartProductsLoader/cartProductsLoader.js';
+import AuthProviders from './Providers/AuthProviders.jsx';
+import Login from './Components/Login/Login.jsx';
+import SignUp from './Components/SignUp/SignUp.jsx';
+import PrivateRoute from './Routes/PrivateRoute.jsx';
 
 const router = createBrowserRouter([
   {
@@ -37,7 +41,15 @@ const router = createBrowserRouter([
       },
       {
         path: 'add-task',
-        element: <AddTask></AddTask>
+        element: <PrivateRoute><AddTask></AddTask></PrivateRoute>
+      },
+      {
+        path: 'login',
+        element: <Login></Login>
+      },
+      {
+        path: 'sign-up',
+        element: <SignUp></SignUp>
       }
     ]
   },
@@ -45,6 +57,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <AuthProviders>
+      <RouterProvider router={router} />
+    </AuthProviders>
   </React.StrictMode>,
 )
