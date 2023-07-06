@@ -54,20 +54,6 @@ const AddTask = () => {
                     </div>
                 )
             }
-            <div className='task'>
-                <h2>task 1</h2>
-                <div>
-                    <button>complete</button>
-                    <button>complete</button>
-                </div>
-            </div>
-            <div className='task'>
-                <h2>task 1</h2>
-                <div>
-                    <button>complete</button>
-                    <button>complete</button>
-                </div>
-            </div>
         </div>
     );
 };
