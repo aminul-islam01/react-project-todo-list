@@ -8,8 +8,9 @@ const Navbar = () => {
             <h2>React App</h2>
             <div>
                 <Link to="/">Home</Link>
-                <Link to="/orders">About</Link>
-                <Link to="/inventory">Contact</Link>
+                <Link to="/about">About</Link>
+                <Link to="/contact">Contact</Link>
+                <Link to="/add-task">Add Task</Link>
                 <Link to="/login">Login</Link>
                 <Link to="/sign-up">SignUp</Link>
                 {/* {

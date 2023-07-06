@@ -1,0 +1,31 @@
+.task-container {
+    background-color: gray;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+.add {
+    display: flex;
+    margin-bottom: 30px;
+}
+.add input {
+    width: 80%;
+    font-size: 20px;
+}
+.add button {
+    width: 20%;
+    border-radius: 0 5px 5px 0;
+}
+.task {
+    display: flex;
+    justify-content: space-between;
+    background-color: skyblue;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.task button {
+    background-color: red;
+    color: #fff;
+    margin-right: 5px;
+}

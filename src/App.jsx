@@ -1,4 +1,5 @@
 
+import { Outlet } from 'react-router-dom'
 import './App.css'
 import Home from './Components/Home/Home/Home'
 import Products from './Components/Home/Products/Products'
@@ -9,8 +10,9 @@ function App() {
   return (
     <div>
       <Navbar></Navbar>
-      <Home></Home>
-      <Products></Products>
+      <Outlet></Outlet>
+      {/* <Home></Home>
+      <Products></Products> */}
     </div>
   )
 }

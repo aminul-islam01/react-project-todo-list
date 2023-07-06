@@ -1,10 +1,11 @@
+import Products from '../Products/Products';
 import './Home.css'
-import image from '/banner.jpg'
 
 const Home = () => {
     return (
-        <div className='banner'>
-            
+        <div>
+            <div className='banner'></div>
+            <Products></Products>
         </div>
     );
 };
